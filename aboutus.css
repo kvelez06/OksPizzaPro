@@ -1,3 +1,17 @@
+/* @keyframes logoAnimation {
+    0% {
+        height: 10vh;
+        background-color: red;
+    }
+    50% {
+        height: 20vh;
+        background-color: green;
+    }
+    100% {
+        height: 10vh;
+        background-color: yellow;
+    }
+} */
 * {
   margin: 0;
   padding: 0;
@@ -6,18 +20,22 @@
 #grid-container {
   display: -ms-grid;
   display: grid;
-  background: white;
+  background: radial-gradient(96.92% 96.92% at 51.74% -7.08%, #FFD597 0%, #cf3131 73.96%);
 }
 
 img {
   width: 100%;
 }
 
-#mob-header2 {
+iframe {
+  width: 100%;
+}
+
+#mob-header {
   display: -ms-grid;
   display: grid;
   position: fixed;
-  background: radial-gradient(59.07% 156.91% at 54.62% 38.18%, #FFD597 5.75%, rgba(224, 127, 90, 0.85359) 30.51%, #B30000 88.35%);
+  background: radial-gradient(59.07% 333.91% at 50.62% 36.18%, #FFD597 5.75%, rgba(224, 127, 90, 0.85359) 30.51%, #B30000 88.35%);
   width: 100%;
   min-height: 20vh;
   justify-items: center;
@@ -27,18 +45,18 @@ img {
   top: 0;
 }
 
-#mob-header1-pmenu {
+#mob-header1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 3fr 3fr;
-      grid-template-columns: 3fr 3fr 3fr;
+  -ms-grid-columns: 2.8fr 3fr 3fr;
+      grid-template-columns: 2.8fr 3fr 3fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#mob-header2-pmenu {
+#mob-header2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr 3fr;
@@ -51,7 +69,7 @@ img {
 
 #mob-button-call {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -62,7 +80,7 @@ img {
 
 #button-delivery {
   background-color: #9f2020;
-  padding: 20px 60px;
+  padding: 10px 40px;
   font-family: Impact, Charcoal, sans-serif;
   font-size: 20px;
   letter-spacing: 0px;
@@ -71,7 +89,7 @@ img {
 
 #button-pickup {
   background-color: #9f2020;
-  padding: 20px 60px;
+  padding: 10px 40px;
   font-family: Impact, Charcoal, sans-serif;
   font-size: 20px;
   letter-spacing: 0px;
@@ -85,32 +103,35 @@ img {
   color: black;
 }
 
-#header-text2 {
-  padding: 5px;
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 15px;
-  color: black;
-  word-spacing: 5px;
-}
-
-#content {
+#mob-content {
   width: 100%;
-  margin-top: 230px;
+  margin-top: 190px;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
 }
 
-#footer {
-  width: 90%;
+#mob-footer {
+  width: 100%;
   min-height: 20vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  -ms-grid-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+      grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
   -webkit-column-gap: 5vw;
           column-gap: 5vw;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
 }
-/*# sourceMappingURL=pizzamenu.css.map */
+
+/* #header-logo:hover {
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+} */
+/*# sourceMappingURL=aboutus.css.map */
