@@ -93,18 +93,39 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (1fr)[15];
-      grid-template-rows: repeat(15, 1fr);
 }
 
-#footer {
-  width: 90%;
+#mob-footer {
+  width: 100%;
   min-height: 20vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  -ms-grid-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+      grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
   -webkit-column-gap: 5vw;
           column-gap: 5vw;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
+  img {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+#img-drinks {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 20px;
+}
+
+#img-drinks img {
+  width: 30%;
 }
 /*# sourceMappingURL=drinksmenu.css.map */

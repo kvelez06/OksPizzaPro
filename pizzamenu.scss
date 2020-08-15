@@ -16,7 +16,7 @@ img {
 #mob-header2 {
     display: grid;
     position: fixed;
-    background: radial-gradient(59.07% 156.91% at 54.62% 38.18%, #FFD597 5.75%, rgba(224, 127, 90, 0.85359) 30.51%, #B30000 88.35%);
+    background: radial-gradient(59.07% 156.91% at 54.62% 38.18%, #FFD597 5.75%, rgba(233, 129, 88, 0.854) 30.51%, #B30000 88.35%);
     width: 100%;
     min-height: 20vh;
     justify-items: center;
@@ -84,20 +84,53 @@ img {
     word-spacing: 5px;
 }
 
+// ------------------------- C O N T E N T
 
 #content {
     width: 100%;
     margin-top: 230px;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+#content-pizza {
+    width: 70%;
+    align-items: center;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 16%;
+    row-gap: 10vw;
 }
 
 
-#footer {
-    width: 90%;
+#mob-footer {
+    width: 100%;
     min-height: 20vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
     column-gap: 5vw;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+
+
+@media only screen and (min-width: 1080px) {
+
+    #content-pizza {
+        img {
+            width: 50%;
+        }
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 4fr 4fr;
+    }
+
+    img {
+        width: 50%;
+        margin-left: 25%;
+    }
 }

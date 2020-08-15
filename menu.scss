@@ -12,6 +12,7 @@
 img {
     width: 100%;
     object-fit: cover;
+    border-radius: 7px;
 }
 
 #mob-header2 {
@@ -92,10 +93,25 @@ img {
 }
 
 
-#footer {
-    width: 90%;
+#mob-footer {
+    width: 100%;
     min-height: 20vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
     column-gap: 5vw;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
 }
+
+@media only screen and (min-width: 1080px) {
+
+    img {
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 20px;
+    }
+}
+

@@ -116,6 +116,31 @@ iframe {
       grid-template-rows: repeat(1, 1fr);
 }
 
+#mob-footer {
+  width: 100%;
+  min-height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  -ms-grid-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+      grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+  -webkit-column-gap: 5vw;
+          column-gap: 5vw;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
+  iframe {
+    width: 50%;
+    margin-top: 170px;
+    margin-left: 25%;
+  }
+}
+
 /* #header-logo:hover {
     animation-name: logoAnimation;
     animation-duration: 2s;

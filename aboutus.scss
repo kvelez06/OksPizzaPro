@@ -102,11 +102,20 @@ iframe {
 
 #mob-content {
     width: 100%;
-    margin-top: 190px;
-    min-height: 100vh;
+    margin-top: 220px;
+    min-height: 80vh;
     display: grid;
+    text-align: justify;
 }
 
+#mob-cont-text {
+    padding: 10px;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: -0.1px;
+    color: #000000;
+    font-weight: 600;
+}
 
 #mob-footer {
     width: 100%;
@@ -120,6 +129,19 @@ iframe {
     font-size: 10px;
     color: #ffffff;
 }
+
+@media only screen and (min-width: 1080px) {
+    #mob-content {
+        margin-top: 230px;
+        min-height: 50vh;
+    }
+
+    img {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
 
 /* #header-logo:hover {
     animation-name: logoAnimation;

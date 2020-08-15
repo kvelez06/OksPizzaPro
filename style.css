@@ -116,6 +116,10 @@ iframe {
       grid-template-rows: repeat(1, 1fr);
 }
 
+#aboutus-link {
+  color: #ffffff;
+}
+
 #mob-footer {
   width: 100%;
   min-height: 20vh;
@@ -134,8 +138,14 @@ iframe {
 }
 
 @media only screen and (min-width: 1080px) {
+  iframe {
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+  }
   img {
     width: 50%;
+    margin-left: 25%;
   }
 }
 

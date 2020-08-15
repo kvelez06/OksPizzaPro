@@ -13,6 +13,7 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 7px;
 }
 
 #mob-header2 {
@@ -104,14 +105,28 @@ img {
   height: 100%;
 }
 
-#footer {
-  width: 90%;
+#mob-footer {
+  width: 100%;
   min-height: 20vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  -ms-grid-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+      grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
   -webkit-column-gap: 5vw;
           column-gap: 5vw;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
+  img {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 20px;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
