@@ -117,8 +117,12 @@ iframe {
   font-family: Georgia, serif;
   font-size: 13px;
   letter-spacing: -0.1px;
-  color: #000000;
+  color: rgba(255, 255, 255, 0.836);
   font-weight: 800;
+}
+
+.dotted {
+  border-top: 3px dotted #bbb;
 }
 
 #mob-footer {
