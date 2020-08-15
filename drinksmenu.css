@@ -91,8 +91,28 @@ img {
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+}
+
+content, p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: black;
+  margin-left: 25%;
+}
+
+content, h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: black;
+  margin-left: 25%;
+}
+
+#img-drinks {
+  row-gap: 10vw;
+  width: 40%;
+  margin-left: 30%;
 }
 
 #mob-footer {
@@ -117,15 +137,15 @@ img {
     width: 50%;
     margin-left: 25%;
   }
-}
-
-#img-drinks {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 20px;
-}
-
-#img-drinks img {
-  width: 30%;
+  #img-drinks {
+    width: 60%;
+    display: -ms-grid;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 20%;
+    display: grid;
+    -ms-grid-columns: 4fr 4fr;
+        grid-template-columns: 4fr 4fr;
+  }
 }
 /*# sourceMappingURL=drinksmenu.css.map */
