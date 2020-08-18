@@ -27,6 +27,7 @@
 
 img {
     width: 100%;
+    border-radius: 15px;
 }
 
 iframe {
@@ -96,6 +97,7 @@ iframe {
     color: black;
 }
 
+// --------------- C O N T E N T
 
 #mob-content {
     width: 100%;
@@ -116,21 +118,34 @@ iframe {
     width: 100%;
     min-height: 20vh;
     display: grid;
+    justify-items: center;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
     column-gap: 5vw;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     color: #ffffff;
 }
 
 
 @media only screen and (min-width: 600px) {
+    #mob-content {
+        margin-top: 300px;
+    }
     
+    iframe {
+        width: 70%;
+        height: 300px;
+        margin-left: 15%;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
+
+    #mob-content {
+        margin-top: 200px;
+    }
 
     iframe {
         width: 50%;

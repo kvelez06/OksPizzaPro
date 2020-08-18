@@ -12,7 +12,7 @@
 img {
     width: 100%;
     object-fit: cover;
-    border-radius: 7px;
+    border-radius: 15px;
 }
 
 #mob-header2 {
@@ -98,6 +98,7 @@ img {
     width: 100%;
     min-height: 20vh;
     display: grid;
+    justify-items: center;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
     column-gap: 5vw;
